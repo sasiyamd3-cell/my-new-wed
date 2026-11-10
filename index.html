@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090817" />
+  <meta name="description" content="Connect your WhatsApp account to MIYORA MD using a secure pairing code." />
+  <title>MIYORA MD — Web Pairing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <main class="shell">
+    <nav class="nav">
+      <a class="brand" href="/"><span class="brand-mark">M</span><span>MIYORA <b>MD</b></span></a>
+      <span class="nav-status"><i></i> PAIRING PORTAL</span>
+    </nav>
+
+    <section class="hero">
+      <div class="eyebrow"><span></span> WHATSAPP CONNECTION</div>
+      <h1>Connect your<br><span>WhatsApp account.</span></h1>
+      <p class="intro">Enter your WhatsApp number and generate a secure pairing code. No QR scanner required.</p>
+
+      <div class="panel">
+        <div class="panel-top">
+          <div><span class="step">01</span><h2>Enter your number</h2></div>
+          <span class="secure"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10V7a5 5 0 0 1 10 0v3m-11 0h12a2 2 0 0 1 2 2v8H4v-8a2 2 0 0 1 2-2Z"/></svg> SECURE SESSION</span>
+        </div>
+        <label for="phone">WHATSAPP NUMBER</label>
+        <div class="phone-wrap"><span class="phone-prefix">+</span><input id="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="94771234567" maxlength="16" /></div>
+        <p class="hint">Include your country code. Example: 94771234567</p>
+        <button id="generate" class="primary"><span>Generate pairing code</span><svg viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+        <div id="message" class="message" role="status" aria-live="polite"></div>
+
+        <div id="code-box" class="code-box" hidden>
+          <div class="code-heading"><span class="step">02</span><h2>Your pairing code</h2></div>
+          <p>Open WhatsApp → Linked devices → Link a device → Link with phone number.</p>
+          <div class="code-row"><strong id="pair-code">--------</strong><button id="copy" class="copy" aria-label="Copy pairing code">COPY</button></div>
+          <div class="code-note">Enter this code in WhatsApp on your phone.</div>
+        </div>
+      </div>
+
+      <div class="features">
+        <div><span class="feature-icon">↗</span><b>Fast connection</b><small>Generate in seconds</small></div>
+        <div><span class="feature-icon">⌁</span><b>Private pairing</b><small>Your code stays yours</small></div>
+        <div><span class="feature-icon">♡</span><b>MIYORA MD</b><small>Simple · Fast · Free</small></div>
+      </div>
+    </section>
+    <footer><span>© <span id="year"></span> MIYORA MD</span><span>Developed with care · SASIYA</span></footer>
+  </main>
+  <script src="/config.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
