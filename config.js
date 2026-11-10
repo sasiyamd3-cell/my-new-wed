@@ -2,5 +2,5 @@
 // Example: https://your-heroku-app.herokuapp.com/pair
 // Do not add a trailing slash.
 window.MIYORA_CONFIG = {
-  API_BASE_URL: "https://YOUR-HEROKU-APP.herokuapp.com/pair"
+  API_BASE_URL: "https://backendda1-1f75a6d6229f.herokuapp.com//pair"
 };
